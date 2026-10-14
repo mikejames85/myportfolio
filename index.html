@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Michael James is a designer and developer creating thoughtful digital experiences."
+    />
+    <meta name="theme-color" content="#f7f7f2" />
+    <title>Michael James — Designer &amp; Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Michael James, home">MJ<span>.</span></a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Open navigation"
+      >
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Available for select projects</p>
+          <h1 id="hero-title">Good ideas,<br />made <span class="accent-text">real.</span></h1>
+          <p class="hero-intro">
+            Hey, I’m Michael — a designer and developer turning thoughtful ideas into
+            useful, memorable digital experiences.
+          </p>
+          <a class="button button-dark" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-art" aria-label="Abstract decorative artwork">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-sun"></div>
+          <span class="art-note note-top">Curiosity first</span>
+          <span class="art-note note-bottom">Made with intention ✳</span>
+          <span class="art-spark spark-one">✳</span>
+          <span class="art-spark spark-two">✳</span>
+        </div>
+        <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
+      </section>
+
+      <section class="about section-shell" id="about" aria-labelledby="about-title">
+        <p class="eyebrow">A little about me</p>
+        <div class="about-content">
+          <h2 id="about-title">I bring clarity to complexity and a little joy to every interaction.</h2>
+          <div class="about-detail">
+            <p>
+              I partner with ambitious people to shape digital products that feel as
+              good as they work. From the first sketch to the final detail, I care
+              about making the whole experience feel considered.
+            </p>
+            <p class="about-location"><span aria-hidden="true">⌖</span> Based in Portland, OR · Working everywhere</p>
+          </div>
+        </div>
+        <div class="skill-list" aria-label="Areas of expertise">
+          <span>Product design</span>
+          <span>Frontend development</span>
+          <span>Creative direction</span>
+          <span>Design systems</span>
+        </div>
+      </section>
+
+      <section class="projects section-shell" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A few things I’ve made</p>
+            <h2 id="projects-title">Selected work<span class="accent-text">.</span></h2>
+          </div>
+          <p class="section-aside">A mix of good people, big questions,<br />and happy little details.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-coral">
+            <a class="project-link" href="#contact" aria-label="Discuss the Goodside project">
+              <div class="project-visual visual-goodside">
+                <span class="visual-label">A better kind of daily</span>
+                <div class="goodside-window">
+                  <span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
+                  <strong>goodside</strong>
+                  <div class="goodside-sun"></div>
+                  <span class="window-caption">Make room for good.</span>
+                </div>
+                <span class="visual-index">01 / 03</span>
+              </div>
+              <div class="project-info">
+                <div><h3>Goodside</h3><p>A calmer way to build better habits.</p></div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+              <div class="project-tags"><span>Product design</span><span>Web app</span></div>
+            </a>
+          </article>
+
+          <article class="project-card project-lilac">
+            <a class="project-link" href="#contact" aria-label="Discuss the Fieldnotes project">
+              <div class="project-visual visual-fieldnotes">
+                <span class="visual-label">Stories, from the source</span>
+                <div class="fieldnotes-page">
+                  <span class="fieldnotes-kicker">FIELDNOTES · ISSUE 04</span>
+                  <strong>Small<br />worlds,<br /><i>wide open.</i></strong>
+                  <div class="fieldnotes-shape"></div>
+                </div>
+                <span class="visual-index">02 / 03</span>
+              </div>
+              <div class="project-info">
+                <div><h3>Fieldnotes</h3><p>An independent journal for curious minds.</p></div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+              <div class="project-tags"><span>Art direction</span><span>E-commerce</span></div>
+            </a>
+          </article>
+
+          <article class="project-card project-green">
+            <a class="project-link" href="#contact" aria-label="Discuss the Common Ground project">
+              <div class="project-visual visual-common">
+                <span class="visual-label">Better spaces, together</span>
+                <div class="common-mark"><span>common</span><strong>ground</strong><i>community, in good company</i></div>
+                <div class="common-orb orb-a"></div>
+                <div class="common-orb orb-b"></div>
+                <span class="visual-index">03 / 03</span>
+              </div>
+              <div class="project-info">
+                <div><h3>Common Ground</h3><p>Helping neighbors find their people.</p></div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+              <div class="project-tags"><span>Brand identity</span><span>Community</span></div>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow"><span class="status-dot"></span> Have a good one in mind?</p>
+        <h2 id="contact-title">Let’s make<br />something <span class="accent-text">matter.</span></h2>
+        <a class="button button-light" href="mailto:michael@example.com">
+          michael@example.com <span aria-hidden="true">↗</span>
+        </a>
+        <div class="contact-doodle" aria-hidden="true">✳</div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark" href="#home">MJ<span>.</span></a>
+      <p>Thoughtfully made in Portland, OR.</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="copyright">© <span id="current-year">2026</span> Michael James</p>
+    </footer>
+  </body>
+</html>
