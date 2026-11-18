@@ -39,7 +39,7 @@ if (themeToggle) {
     // Show a sun or moon icon to hint at the next theme.
     themeToggle.firstElementChild.textContent = theme === "dark" ? "☼" : "☾";
     // Keep the browser's surrounding interface color in sync with the page.
-    document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#171a17" : "#f7f7f2";
+    document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#19282b" : "#fff8f4";
   };
 
   // Restore dark mode when it was previously selected; otherwise start in light mode.
