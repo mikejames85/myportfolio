@@ -6,11 +6,21 @@ const siteNav = document.querySelector(".site-nav");
 const currentYear = document.querySelector("#current-year");
 // Find the button that switches between light and dark themes.
 const themeToggle = document.querySelector(".theme-toggle");
+const contactForm = document.querySelector("#contact-form");
+const contactFormStatus = document.querySelector("#contact-form-status");
 
 // Update the year only when the footer element exists.
 if (currentYear) {
   // Show the current year so the copyright date stays up to date.
   currentYear.textContent = new Date().getFullYear();
+}
+
+if (contactForm && contactFormStatus) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    contactFormStatus.textContent =
+      "This demo form is not connected to a delivery service, so your message was not sent.";
+  });
 }
 
 // Apply the saved theme, or use the light theme the first time the page is opened.
